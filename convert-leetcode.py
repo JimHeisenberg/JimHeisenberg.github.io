@@ -8,7 +8,7 @@ import time
 
 
 # config tag appearing in headers
-tag = "leetcode"
+tags = ["leetcode75"]
 
 
 # path config
@@ -28,13 +28,16 @@ for fileName in fileNames:
     headers.append("---\n")
     headers.append("layout: post\n")
     headers.append(f"date: {modifiedTime} +0800\n")
-    headers.append(f"tags: {tag}\n")
+    tags_str = ""
+    for tag in tags:
+        tags_str += ' ' + tag
+    headers.append(f"tags:{tags_str}\n")
     headers.append("---\n")
     headers.append("\n")
     # delete files in drafts and create corresponding files in posts
     with open(draftsPath + fileName, mode="r+", encoding="UTF-8") as f:
         content = f.readlines()
-    with open(postsPath + fileNamePrefix + "leetcode" + fileName, mode="x+", encoding="UTF-8") as f:
+    with open(postsPath + fileNamePrefix + "leetcode75" + fileName, mode="x+", encoding="UTF-8") as f:
         f.writelines(headers)
         f.writelines(content)
     os.remove(draftsPath + fileName)
