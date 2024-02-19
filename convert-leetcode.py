@@ -8,7 +8,7 @@ import time
 
 
 # config tag appearing in headers
-tags = ["leetcode75", "数组"]
+tags = ["leetcode75", ]
 
 
 # path config
