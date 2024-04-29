@@ -8,7 +8,7 @@ import time
 
 
 # config tag appearing in headers
-tags = ["leetcode75", ]
+tags = ["leetcode", "sql", "sql50"]
 
 
 # path config
@@ -37,7 +37,7 @@ for fileName in fileNames:
     # delete files in drafts and create corresponding files in posts
     with open(draftsPath + fileName, mode="r+", encoding="UTF-8") as f:
         content = f.readlines()
-    with open(postsPath + fileNamePrefix + "leetcode75-" + fileName, mode="x+", encoding="UTF-8") as f:
+    with open(postsPath + fileNamePrefix + "leetcode-" + fileName, mode="x+", encoding="UTF-8") as f:
         f.writelines(headers)
         f.writelines(content)
     os.remove(draftsPath + fileName)
