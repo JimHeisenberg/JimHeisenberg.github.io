@@ -8,7 +8,7 @@ import time
 
 
 # config tag appearing in headers
-tags = ["leetcode", "sql", "sql50"]
+tags = ["leetcode", ]
 
 
 # path config
