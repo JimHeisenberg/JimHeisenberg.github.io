@@ -1,10 +1,10 @@
 ---
 layout: post
 date: 2024-12-22 00:05:58 +0800
-tags: leetcode contest
+tags: leetcode contest biweekly-contest-146
 ---
 
-Q1. Count Subarrays of Length Three With a Condition
+# 3392. Count Subarrays of Length Three With a Condition
 
 Given an integer array nums, return the number of subarrays of length 3 such that the sum of the first and third numbers equals exactly half of the second number.
 
